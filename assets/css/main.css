@@ -1309,7 +1309,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
-		background-position: center, 50% 50%;
+		background-position: center, 50% center;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
@@ -1557,8 +1557,8 @@ input, select, textarea {
 		}
 
 		.image.fit {
-			display: block;
-			width: 100%;
+			/*display: block;*/
+			/*width: 100%;*/
 		}
 
 		.image.featured {
@@ -1572,14 +1572,25 @@ input, select, textarea {
 			margin: 0 2em 2em 0;
 		}
 
+		.image.bottomed{
+			display: flex;
+			width: 100%;
+			align-items: end;
+			height: 100%;
+		}
+
 		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
+			/*display: block;*/
+			/*margin: 0 0 2em 0;*/
+			display: flex;
+			width: 100%;
+			align-items: center;
+			height: 100%;
 		}
 
 			.image.centered img {
 				margin: 0 auto;
-				width: auto;
+				width: 100%;
 			}
 
 /* Button */
