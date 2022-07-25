@@ -220,8 +220,42 @@
 				});
 
 		}
-})(jQuery);
 
-function formSubmit(){
-	alert("您填寫的預約表單已成功送出(ง ˆ̑ ‵̮ˆ̑)ว゛.ᐟ.ᐟ");
-}
+	// Google form
+		$('#google-form').submit(function (e) {
+	      //在這裡我們要先擋掉form默認事件
+	      e.preventDefault();
+
+	      if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#time1').val() && $('#time2').val()) {//需要先確認必填欄位是否填寫
+	        $.ajax({
+	          // url為Google Form按下submit的aciotn
+	          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfUH5D9hPe7hOpMOZdUg-fpttOOKq9Eh2ypTz3dVIAUboVZpQ/formResponse",
+	          crossDomain: true,//解決跨網域CORS的問題
+	          data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+	            "emailAddress": $('#email').val(),
+	            "entry.946793821": $('#name').val(),
+	            "entry.819294006": $('#phone').val(),
+	            "entry.1672301594": $('#time1').val(),
+	            "entry.1711592634": $('#time2').val(),
+	            "entry.1855613071": $('#message').val()
+	          },
+	          type: "POST", //因為是要進行insert的動作，故是用POST
+	          dataType: "JSONP",
+	          complete: function () {
+	            //完成後把這些欄位清空
+	            $('#email').val('')
+	            $('#name').val('')
+	            $('#phone').val('')
+	            $('#time1').val('')
+	            $('#time2').val('')
+	            $('#message').val('')
+	            //最後跳轉到感謝的頁面
+	            // window.location.replace("index.html");
+	          }
+	        });
+			alert("您填寫的表單已成功送出(ง ˆ̑ ‵̮ˆ̑)ว゛.ᐟ.ᐟ\n收到e-mail回覆才算預約成功");
+	      }else{
+	      	alert("資料請務必填寫完整再送出");
+	      }
+	    });
+})(jQuery);
