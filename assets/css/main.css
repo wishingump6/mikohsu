@@ -1309,7 +1309,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
-		background-position: center, 50% center;
+		background-position: center, center center;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
@@ -1365,7 +1365,7 @@ input, select, textarea {
 
 		}
 
-	strong, b, h1, h2, h3, h4, h5, h6 {
+	strong, h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		color: #665552;
 	}
