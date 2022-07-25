@@ -49,13 +49,13 @@
 					if (window.location.hash != href){
 						window.location.hash = href;
 
-						if(href == "#home"){
-							window.document.getElementById("main").style.background = "rgba(255, 255, 255, 0.75)";
+						if(href == "#home" | href == "#contact"){
+							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.75)";
 							// window.document.getElementById("nav").getElementsByClassName("active")[0].style.opacity = "0.75";
 						}
 
 						else{
-							window.document.getElementById("main").style.background = "rgba(255, 255, 255, 1)";
+							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 1)";
 							// window.document.getElementById("nav").getElementsByClassName("active")[0].style.opacity = "1";
 						}
 					}
