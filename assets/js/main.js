@@ -226,7 +226,7 @@
 	      //在這裡我們要先擋掉form默認事件
 	      e.preventDefault();
 
-	      if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('#time1').val() && $('#time2').val()) {//需要先確認必填欄位是否填寫
+	      if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('#time2').val()) {//需要先確認必填欄位是否填寫
 	        $.ajax({
 	          // url為Google Form按下submit的aciotn
 	          url: "https://docs.google.com/forms/d/e/1FAIpQLSfUH5D9hPe7hOpMOZdUg-fpttOOKq9Eh2ypTz3dVIAUboVZpQ/formResponse",
@@ -248,9 +248,9 @@
 	            $('#email').val('');
 	            $('#name').val('');
 	            $('#phone').val('')
-	            $('#purpose').val('來信目的');
+	            $('#purpose').val('- 來信目的');
 	            $('#time1').val('');
-	            $('#time2').val('預計拍攝時段');
+	            $('#time2').val('- 預計拍攝時段');
 	            $('#message').val('');
 	            //最後跳轉到感謝的頁面
 	            // window.location.replace("index.html");
@@ -258,7 +258,7 @@
 	          }
 	        });
 	      }else{
-	      	alert("∣ 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 ∣\n\n 🤍   資料好像沒有填寫完整哦( ˘•ω•˘ ).ᐟ.ᐟ\n\n");
+	      	alert("∣ 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 ∣\n\n 資料好像沒有填寫完整哦( ˘•ω•˘ ).ᐟ.ᐟ\n\n");
 	      }
 	    });
 })(jQuery);
