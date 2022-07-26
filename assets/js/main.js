@@ -223,15 +223,14 @@
 
 	// Google form
 		$('#google-form').submit(function (e) {
-	      //在這裡我們要先擋掉form默認事件
 	      e.preventDefault();
 
-	      if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('#time2').val()) {//需要先確認必填欄位是否填寫
+	      if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('#time2').val()) {
 	        $.ajax({
 	          // url為Google Form按下submit的aciotn
 	          url: "https://docs.google.com/forms/d/e/1FAIpQLSfUH5D9hPe7hOpMOZdUg-fpttOOKq9Eh2ypTz3dVIAUboVZpQ/formResponse",
-	          crossDomain: true,//解決跨網域CORS的問題
-	          data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+	          crossDomain: true,//CORS problem
+	          data: {
 	            "entry.1475828167": $('#email').val(),
 	            "entry.946793821": $('#name').val(),
 	            "entry.819294006": $('#phone').val(),
@@ -240,11 +239,11 @@
 	            "entry.1711592634": $('#time2').val(),
 	            "entry.1855613071": $('#message').val()
 	          },
-	          type: "POST", //因為是要進行insert的動作，故是用POST
+	          type: "POST", //POST, insert value
 	          dataType: "JSONP",
 	          complete: function () {
 	          	console.log($('#email').val()+$('#name').val()+$('#phone').val()+$('#purpose').val()+$('#time1').val()+$('#time2').val()+$('#message').val());
-	            //完成後把這些欄位清空
+	            //init all
 	            $('#email').val('');
 	            $('#name').val('');
 	            $('#phone').val('')
@@ -252,8 +251,7 @@
 	            $('#time1').val('');
 	            $('#time2').val('- 預計拍攝時段');
 	            $('#message').val('');
-	            //最後跳轉到感謝的頁面
-	            // window.location.replace("index.html");
+	            //Show alert box
 	            alert("∣ 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 ∣\n\n 🤍 已收到您填寫的表單\n 🤍 一人作業請靜候 𝘌-𝘮𝘢𝘪𝘭 回覆.ᐟ.ᐟ");
 	          }
 	        });
