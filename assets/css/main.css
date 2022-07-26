@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
@@ -1307,10 +1308,13 @@ input, select, textarea {
 
 	body {
 		background-image: url("images/overlay.png"), url("images/bg.jpg");
-		background-repeat: repeat, no-repeat;
+/*		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: center, center center;
-		background-attachment: fixed;
+		background-attachment: fixed, fixed;*/
+		background-repeat: repeat, repeat;
+		background-size: auto, 100%;
+		background-position: center, top;
 		overflow-y: scroll;
 	}
 
@@ -1330,7 +1334,7 @@ input, select, textarea {
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
-		line-height: 1.75em;
+		line-height: 1.3em;
 	}
 
 	@supports (-webkit-touch-callout: none) {
@@ -1790,7 +1794,7 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 4.25em;
+		height: 4em;
 		cursor: default;
 	}
 
@@ -1800,7 +1804,7 @@ input, select, textarea {
 			color: #ffffff;
 			width: 1em;
 			height: 1em;
-			line-height: 0.9em;
+			line-height: 0.75em;
 			font-size: 2.5em;
 			margin: 0 0.25em 0 0.25em;
 			opacity: 0.35;
@@ -2068,7 +2072,7 @@ input, select, textarea {
 						background: rgba(0, 0, 0, 0.75);
 						color: #ffffff;
 						text-align: center;
-						line-height: 2.75em;
+						line-height: 2.7em;
 						font-size: 1.5em;
 						z-index: 1;
 						-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
@@ -2108,7 +2112,7 @@ input, select, textarea {
 				}
 
 					#main > .panel.intro header h1 {
-						line-height: 1.25em;
+						line-height: 1.2em;
 						margin-bottom: 0;
 					}
 
