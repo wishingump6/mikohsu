@@ -14,13 +14,10 @@
 
 <link rel="stylesheet" href="assets/css/main.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+<script src="assets/js/jquery.min.js"></script>
+
 </head>
 
-
-	
-
-</script>
 <body class="is-preload">
 <img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>
 		<!-- icon說明-->
@@ -80,7 +77,8 @@
 												var scrollH = $body.scrollTop(),
 												winH = $win.height(),
 												css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-												if(scrollH > 30) {
+												if(scrollH > 500) {
+													console.log(scrollH);
 												$button.css(css);
 												$button.fadeIn("slow");
 												} else {
@@ -312,7 +310,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
