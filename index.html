@@ -27,10 +27,10 @@
 			<div id="wrapper">
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#home" class="icon solid fa-home"><span><i><b>Home</b></i></span></a>
-						<a href="#work" class="icon solid fa-heart"><span><i><b>Portfolio</b></i></span></a>
-						<a href="#info" class="icon solid fa-camera"><span><i><b>Information</b></i></span></a>
-						<a href="#contact" class="icon solid fa-comments"><span><i><b>Contact</b></i></span></a>
+						<a href="#home" class="icon solid fa-home" style="color:#735248;"><span><i><b>Home</b></i></span></a>
+						<a href="#work" class="icon solid fa-heart" style="color:#916f66;"><span><i><b>Portfolio</b></i></span></a>
+						<a href="#info" class="icon solid fa-camera" style="color:#735248;"><span><i><b>Information</b></i></span></a>
+						<a href="#contact" class="icon solid fa-comments" style="color:#916f66;"><span><i><b>Contact</b></i></span></a>
 					</nav>
 
 				<!-- Main -->
@@ -55,44 +55,53 @@
 									<center><h2>Portfolio · 作品集</h2></center>
 								</header>
 								<p>
-								<!-- 回到頂端按鈕 start -->
+								    <!-- 回到頂端按鈕 start -->
 									<script>
-									//<![CDATA[
-									(function () {
-									$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
-									var img = "assets/css/images/button.png",
-									locatioin = 0.9, // 按鈕出現在螢幕的高度
-									right = 10, // 距離右邊 px 值
-									opacity = 0.3, // 透明度
-									speed = 500, // 捲動速度
 
-									$button = $("#goTopButton"),
+									
+												//<![CDATA[
 
-									$body = $(document),
-									$win = $(window);
-									$button.attr("src", img);
-									$button.on({
-									mouseover: function() {$button.css("opacity", 1);},
-									mouseout: function() {$button.css("opacity", opacity);},
-									click: function() {$("html, body").animate({scrollTop: 0}, speed);}
-									});
-									window.goTopMove = function () {
-									var scrollH = $body.scrollTop(),
-									winH = $win.height(),
-									css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-									if(scrollH > 20) {
-									$button.css(css);
-									$button.fadeIn("slow");
-									} else {
-									$button.fadeOut("slow");
-									}
-									};
-									$win.on({
-									scroll: function() {goTopMove();},
-									resize: function() {goTopMove();}
-									});
-									} )();
-									//]]>
+												(function (goTopButton) {
+												$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+												var img = "assets/css/images/button.png",
+												locatioin = 0.9, // 按鈕出現在螢幕的高度
+												position = 20;
+												right = 10, // 距離右邊 px 值
+												opacity = 0.3, // 透明度
+												speed = 500, // 捲動速度
+
+												$button = $("#goTopButton"),
+
+												$body = $(document),
+												$win = $(window);
+												$button.attr("src", img);
+												$button.on({
+												mouseover: function() {$button.css("opacity", 1);},
+												mouseout: function() {$button.css("opacity", opacity);},
+												click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+												});
+												window.goTopMove = function () {
+												var scrollH = $body.scrollTop(),
+												winH = $win.height(),
+												css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+												if(scrollH > 20) {
+												$button.css(css);
+												$button.fadeIn("slow");
+												} else {
+												$button.fadeOut("slow");
+												}
+												};
+												$win.on({
+												scroll: function() {goTopMove();},
+												resize: function() {goTopMove();}
+												});
+												
+
+											} )();
+											
+										
+			
+
 									</script>
 									
 								</p>
@@ -247,9 +256,13 @@
 								
 								
 								<center><h1>𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝙈𝙚</h1></center><br>
-<transition>
+
+							
+
 								<form id="google-form">
+								 
 									<div class="row">
+									
 										<div class="col-6 col-12-medium">
 											<input type="text" id="email" placeholder="𝘌-𝘮𝘢𝘪𝘭" />
 										</div>
@@ -292,7 +305,7 @@
 
 
 
-							</article></transition>
+							</article>
 
 					</div>
 
