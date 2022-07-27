@@ -1809,7 +1809,7 @@ input, select, textarea {
 			line-height: 0.75em;
 			font-size: 2.5em;
 			margin: 0 0.25em 0 0.25em;
-			opacity: 0.5;
+			opacity: 0.85;
 			outline: 0;
 			-moz-transition: opacity .25s ease-in-out;
 			-webkit-transition: opacity .25s ease-in-out;
