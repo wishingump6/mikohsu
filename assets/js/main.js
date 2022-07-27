@@ -33,32 +33,38 @@
 	// Nav.
 		$nav_links
 			.on('click', function(event) {
+ 				function toggle_visibility(goTopButton){
+					var href = $(this).attr('href');
+					
 
-				var href = $(this).attr('href');
+					// Not a panel link? Bail.
+						if (href.charAt(0) != '#'
+						||	$panels.filter(href).length == 0)
+							return;
 
-				// Not a panel link? Bail.
-					if (href.charAt(0) != '#'
-					||	$panels.filter(href).length == 0)
-						return;
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
 
-				// Prevent default.
-					event.preventDefault();
-					event.stopPropagation();
+					// Change panels.
+						if (window.location.hash != href){
+							window.location.hash = href;
 
-				// Change panels.
-					if (window.location.hash != href){
-						window.location.hash = href;
+							if(href == "#work" ){
+								
+								window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.89)";
+							
+							}
+							else if(href == "#contact"||href == "#home"|| href == "#info"){
+								window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.85)";
+							
+								
+							
+							}
 
-						if(href == "#work"){
-							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.9)";
-							// window.document.getElementById("nav").getElementsByClassName("active")[0].style.opacity = "0.75";
-						}
-
-						else{
-							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.85)";
-							// window.document.getElementById("nav").getElementsByClassName("active")[0].style.opacity = "1";
-						}
-					}
+						
+						
+					}}
 
 			});
 
@@ -260,3 +266,19 @@
 	      }
 	    });
 })(jQuery);
+
+/*隱藏按鈕
+			
+			
+
+				if (window.location.hash != href){
+						window.location.hash = href;
+							if(href == "#work"){
+								$(".goTopButton").show();
+							}
+							else{
+								$(".goTopButton").hide("fast");
+							}
+						}*/
+
+											
