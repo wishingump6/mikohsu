@@ -49,13 +49,13 @@
 					if (window.location.hash != href){
 						window.location.hash = href;
 
-						if(href == "#home" | href == "#contact"){
-							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.75)";
+						if(href == "#work"){
+							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.9)";
 							// window.document.getElementById("nav").getElementsByClassName("active")[0].style.opacity = "0.75";
 						}
 
 						else{
-							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 1)";
+							window.document.getElementById("main").style.background = "rgba(250, 250, 250, 0.85)";
 							// window.document.getElementById("nav").getElementsByClassName("active")[0].style.opacity = "1";
 						}
 					}
@@ -252,7 +252,7 @@
 	            $('#time2').val('- 預計拍攝時段');
 	            $('#message').val('');
 	            //Show alert box
-	            alert("- 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 -\n\n 🤍 已收到您填寫的表單\n 🤍 一人作業請靜候 𝘌-𝘮𝘢𝘪𝘭 回覆.ᐟ.ᐟ");
+	            alert("- 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 ∣\n\n 🤍 已收到您填寫的表單\n 🤍 一人作業請靜候 𝘌-𝘮𝘢𝘪𝘭 回覆.ᐟ.ᐟ");
 	          }
 	        });
 	      }else{
