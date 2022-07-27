@@ -60,13 +60,14 @@
 									//<![CDATA[
 									(function () {
 									$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
-									var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
+									var img = "assets/css/images/button.png",
 									locatioin = 0.9, // 按鈕出現在螢幕的高度
 									right = 10, // 距離右邊 px 值
 									opacity = 0.3, // 透明度
 									speed = 500, // 捲動速度
 
 									$button = $("#goTopButton"),
+
 									$body = $(document),
 									$win = $(window);
 									$button.attr("src", img);
@@ -95,8 +96,8 @@
 									</script>
 									
 								</p>
-								<section><transition>
-									<div class="row" v-show="isShow" >
+								<section>
+									<div class="row"  >
 										<div class="col-4 col-6-medium col-12-small">
 											<a class="image fit"><img src="images/u-birth-1.jpg" alt=""></a>
 										</div>
