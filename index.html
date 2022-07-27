@@ -19,7 +19,7 @@
 
 
 	
-});
+
 </script>
 <body class="is-preload">
 
@@ -37,13 +37,14 @@
 					<div id="main">
 
 						<!-- Me -->
+
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Miko</h1>
 									<p>Taipei, Photographer<br></p>
 								</header>
 								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my Portfolio</span></span>
+									
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
@@ -55,46 +56,47 @@
 								</header>
 								<p>
 								<!-- 回到頂端按鈕 start -->
-<script>
-//<![CDATA[
-(function () {
-$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
-var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
-locatioin = 1/2, // 按鈕出現在螢幕的高度
-right = 10, // 距離右邊 px 值
-opacity = 0.3, // 透明度
-speed = 500, // 捲動速度
-$button = $("#goTopButton"),
-$body = $(document),
-$win = $(window);
-$button.attr("src", img);
-$button.on({
-mouseover: function() {$button.css("opacity", 1);},
-mouseout: function() {$button.css("opacity", opacity);},
-click: function() {$("html, body").animate({scrollTop: 0}, speed);}
-});
-window.goTopMove = function () {
-var scrollH = $body.scrollTop(),
-winH = $win.height(),
-css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-if(scrollH > 20) {
-$button.css(css);
-$button.fadeIn("slow");
-} else {
-$button.fadeOut("slow");
-}
-};
-$win.on({
-scroll: function() {goTopMove();},
-resize: function() {goTopMove();}
-});
-} )();
-//]]>
-</script>
+									<script>
+									//<![CDATA[
+									(function () {
+									$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+									var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
+									locatioin = 0.9, // 按鈕出現在螢幕的高度
+									right = 10, // 距離右邊 px 值
+									opacity = 0.3, // 透明度
+									speed = 500, // 捲動速度
+
+									$button = $("#goTopButton"),
+									$body = $(document),
+									$win = $(window);
+									$button.attr("src", img);
+									$button.on({
+									mouseover: function() {$button.css("opacity", 1);},
+									mouseout: function() {$button.css("opacity", opacity);},
+									click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+									});
+									window.goTopMove = function () {
+									var scrollH = $body.scrollTop(),
+									winH = $win.height(),
+									css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+									if(scrollH > 20) {
+									$button.css(css);
+									$button.fadeIn("slow");
+									} else {
+									$button.fadeOut("slow");
+									}
+									};
+									$win.on({
+									scroll: function() {goTopMove();},
+									resize: function() {goTopMove();}
+									});
+									} )();
+									//]]>
+									</script>
 									
 								</p>
-								<section>
-									<div class="row">
+								<section><transition>
+									<div class="row" v-show="isShow" >
 										<div class="col-4 col-6-medium col-12-small">
 											<a class="image fit"><img src="images/u-birth-1.jpg" alt=""></a>
 										</div>
@@ -212,7 +214,7 @@ resize: function() {goTopMove();}
 											<a class="image bottomed"><img src="images/alephant-3.jpg" alt=""></a>
 										</div>
 									</div>
-								</section>
+								</section></transition>
 							</article>
 
 						<!-- info -->
@@ -244,7 +246,7 @@ resize: function() {goTopMove();}
 								
 								
 								<center><h1>𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝙈𝙚</h1></center><br>
-
+<transition>
 								<form id="google-form">
 									<div class="row">
 										<div class="col-6 col-12-medium">
@@ -289,7 +291,7 @@ resize: function() {goTopMove();}
 
 
 
-							</article>
+							</article></transition>
 
 					</div>
 
