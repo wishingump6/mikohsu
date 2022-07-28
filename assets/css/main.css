@@ -1402,9 +1402,14 @@ input, select, textarea {
 		font-size: 0.9em;
 		letter-spacing: -0.015em;
 	}
-	h3, h5 {
+	h3 {
 		color: #665552;
 		font-size: 1.1 em;
+		letter-spacing: -0.015em;
+	}
+	h5 {
+		color: #665552;
+		font-size: 1.6 em;
 		letter-spacing: -0.015em;
 	}
 
