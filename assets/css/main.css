@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -71,6 +66,7 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+	border-radius: 3.5px;
 }
 
 /* Row */
@@ -1332,7 +1328,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 微軟正黑體, sans-serif;
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -1379,37 +1375,51 @@ input, select, textarea {
 		}
 
 	strong, h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		color: #665552;
+		font-weight: 500;
+		
 	}
 
 	h1 {
+		color: #665552;
 		font-size: 2.4em;
 		letter-spacing: -0.015em;
 	}
 
 	h2 {
-		font-size: 1.8em;
+		color: #665552;
+		font-size: 1.45em;
 		letter-spacing: -0.015em;
 	}
 
-	h3, h4, h5, h6 {
-		font-size: 1.25em;
+	h4 {
+		color: #ffffff;
+		font-size: 1.45em;
+		letter-spacing: -0.015em;
+	}
+
+
+	h3, h5, h6 {
+		color: #665552;
+		font-size: 1.1 em;
 		letter-spacing: -0.015em;
 	}
 
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 1.75em;
+			font-size: 2em;
 		}
 
-		h2 {
-			font-size: 1.375em;
+		h2,h4 {
+			font-size: 1.5em;
 		}
+		
 
-		h3, h4, h5, h6 {
-			font-size: 1em;
+		h3, h6 {
+			font-size: 1.35em;
+		}
+		h5{
+			font-size: 1.2em;
 		}
 
 	}
@@ -1417,7 +1427,8 @@ input, select, textarea {
 	blockquote {
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
-		font-style: italic;
+		font-style: 微軟正黑體;
+		border-radius: 10px;
 	}
 
 	em, i {
@@ -1970,6 +1981,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
+		border-radius: 25px;
 		background: rgba(250, 250, 250, 0.75);
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
