@@ -2240,3 +2240,9 @@ input, select, textarea {
 html{
 	scroll-behavior: smooth;
 }
+
+.instagram-media{
+	display: inline !important;
+	/*margin:0 auto !important;*/
+	width: 45% !important;
+}
