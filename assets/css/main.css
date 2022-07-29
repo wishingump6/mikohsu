@@ -1867,8 +1867,8 @@ input, select, textarea {
 			#nav a span {
 				display: block;
 				position: absolute;
-				background: rgba(145, 116, 106, 0.6);
-				color: #ffffff;
+				background: rgba(145, 116, 106, 0);
+				color: #916f66;
 				top: -2.75em;
 				font-size: 0.3em;
 				height: 2.25em;
