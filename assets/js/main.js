@@ -260,6 +260,11 @@
 	      	alert("- 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 -\n\n 資料好像沒有填寫完整哦( ˘•ω•˘ ).ᐟ.ᐟ\n\n");
 	      }
 	    });
+	    $("#gotoActivity").on('click', function(event) {
+	    	setTimeout(function(){
+	    		location.href = "#activity";
+	    	}, 800);
+	    });
 })(jQuery);
 
 /*隱藏按鈕
