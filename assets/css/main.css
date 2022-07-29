@@ -2283,17 +2283,17 @@ html{
 }
 #fade-in-content {
 	opacity: 0;
-	animation: fadeIn 1.5s;
+	animation: fadeIn 2s;
 	animation-delay:0.3s;
-	-webkit-animation:fadeIn 1.5s;
+	-webkit-animation:fadeIn 2s;
 	-webkit-animation-delay:0.3s;
 	-webkit-animation-fill-mode: forwards;
 }
 #fade-in-content2 {
 	opacity: 0;
-	animation: fadeIn 1.5s;
+	animation: fadeIn 4s;
 	animation-delay:0.6s;
-	-webkit-animation:fadeIn 1.5s;
+	-webkit-animation:fadeIn 4s;
 	-webkit-animation-delay:0.6s;
 	-webkit-animation-fill-mode: forwards;
 }
@@ -2310,17 +2310,17 @@ html{
 #fade-in-text1 {
 	opacity: 0;
 	animation: fadeIn 4s;
-	animation-delay: 1.85s;
+	animation-delay: 1.5s;
 	-webkit-animation:fadeIn 4s;
-	-webkit-animation-delay: 1.85s;
+	-webkit-animation-delay: 1.5s;
 	-webkit-animation-fill-mode: forwards;
 }
 #fade-in-text2 {
 	opacity: 0;
 	animation: fadeIn 4s;
-	animation-delay: 3.1s;
+	animation-delay: 2.8s;
 	-webkit-animation:fadeIn 4s;
-	-webkit-animation-delay: 3.1s;
+	-webkit-animation-delay: 2.8s;
 	-webkit-animation-fill-mode: forwards;
 }
 
