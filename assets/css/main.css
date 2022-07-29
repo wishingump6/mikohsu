@@ -1819,7 +1819,7 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 4em;
+		height: 5em;
 		cursor: default;
 	}
 
@@ -1853,9 +1853,9 @@ input, select, textarea {
 				display: block;
 				position: absolute;
 				left: 50%;
-				bottom: -60%;
+				bottom: -100%;
 				margin-left: -0.5em;
-				border-bottom: solid 0em rgba(250, 250, 250, 0.875);
+				border-bottom: solid 0em rgba(250, 250, 250, 0.75);
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
 				-moz-transition: border-bottom-width .25s ease-in-out;
@@ -1869,7 +1869,7 @@ input, select, textarea {
 				position: absolute;
 				background: rgba(145, 116, 106, 0);
 				color: #916f66;
-				top: -2.75em;
+				/*top: -2.75em;*/
 				font-size: 0.3em;
 				height: 2.25em;
 				line-height: 2.25em;
@@ -1917,7 +1917,7 @@ input, select, textarea {
 				position: absolute;
 				background: rgba(145, 116, 106, 0.0);
 				color: #735248;
-				top: -2.75em;
+				/*top: -2.75em;*/
 				font-size: 0.3em;
 				font-weight: bold;
 				text-align: center;
@@ -2264,3 +2264,13 @@ html{
 	margin:0 auto !important;
 	width: 45% !important;
 }*/
+@keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; /*设置不透明度*/
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+
+
