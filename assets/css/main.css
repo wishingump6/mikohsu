@@ -2325,9 +2325,9 @@ html{
 
 #fade-in-title2 {
 	opacity: 0;
-	animation: fadeIn 0.4s;
+	animation: fadeIn 0.6s;
 	animation-delay:0s;
-	-webkit-animation:fadeIn 0.4s;
+	-webkit-animation:fadeIn 0.6s;
 	-webkit-animation-delay:0s;
 	-webkit-animation-fill-mode: forwards;
 }
