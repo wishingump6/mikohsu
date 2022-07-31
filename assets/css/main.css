@@ -1328,7 +1328,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 微軟正黑體, sans-serif;
+		font-family: '-apple-system', 'BlinkMacSystemFont', 'Microsoft JhengHei', 'sans-serif';
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -1393,9 +1393,9 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-weight: 450;
+		font-weight: 530;
 		color: #665552;
-		font-size: 1.1 em;
+		font-size: 1.1em;
 		letter-spacing: -0.015em;
 	}
 
@@ -1407,7 +1407,7 @@ input, select, textarea {
 	h3 {
 		font-weight: 530;
 		color: #665552;
-		font-size: 1.1 em;
+		font-size: 1.1em;
 		letter-spacing: -0.015em;
 	}
 	h5 {
@@ -1427,8 +1427,7 @@ input, select, textarea {
 			font-size: 1.3em;
 		}
 		h4 {
-			font-weight: 450;
-			font-size: 1.2em;
+			font-size: 1.1em;
 		}
 
 		h3 {
@@ -1446,7 +1445,7 @@ input, select, textarea {
 	blockquote {
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
-		font-style: 微軟正黑體;
+		font-style: '微軟正黑體';
 		border-radius: 10px;
 	}
 
