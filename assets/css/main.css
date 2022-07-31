@@ -1514,9 +1514,10 @@ input, select, textarea {
 	form textarea {
 		-webkit-appearance: none;
 		border: 0;
-		background: #f4f4f4;
+		background: #ede8e6;
 		padding: 0.75em;
 		width: 100%;
+		opacity: 0.8;
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
@@ -1535,23 +1536,24 @@ input, select, textarea {
 	form input[type="email"],
 	form input[type="password"],
 	form select {
-		line-height: 1.35em;
+		line-height: 1.2em;
+		color:#8a817d;
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #999;
+		color:#8a817d;
 	}
 
 	form :-moz-placeholder {
-		color: #999;
+		color:#8a817d;
 	}
 
 	form ::-moz-placeholder {
-		color: #999;
+		color:#8a817d;
 	}
 
 	form :-ms-input-placeholder {
-		color: #999;
+		color:#8a817d;
 	}
 
 /* Section/Article */
@@ -1642,7 +1644,7 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
+		background-color: #665552;
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
