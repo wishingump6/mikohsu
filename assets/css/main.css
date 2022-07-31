@@ -2368,9 +2368,9 @@ html{
 #fade-in-icon {
 	opacity: 0;
 	animation: fadeIn 3s;
-	animation-delay: 3.6s;
+	animation-delay: 3.4s;
 	-webkit-animation:fadeIn 3s;
-	-webkit-animation-delay: 3.6s;
+	-webkit-animation-delay: 3.4s;
 	-webkit-animation-fill-mode: forwards;
 }
 
