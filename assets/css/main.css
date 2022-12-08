@@ -1555,7 +1555,7 @@ h5 {
     }
 
     h6 {
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
 
     h5 {
@@ -1730,6 +1730,9 @@ header>p {
         width: 100% !important;
     }
 
+    .phonesize{
+    	border: 11px !important;
+    }
 }
 
 .image {
