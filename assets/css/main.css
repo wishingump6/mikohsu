@@ -1635,7 +1635,6 @@ input, select, textarea {
 			align-items: center;
 			height: 100%;
 		}
-	
 
 			.image.centered img {
 				margin: 0 auto;
@@ -2354,28 +2353,28 @@ html{
 }
 #fade-in-content2 {
 	opacity: 0;
-	animation: fadeIn 3s;
+	animation: fadeIn 2.7s;
 	animation-delay:0.4s;
-	-webkit-animation:fadeIn 3s;
+	-webkit-animation:fadeIn 2.7s;
 	-webkit-animation-delay:0.4s;
 	-webkit-animation-fill-mode: forwards;
 }
 
 #fade-in-portfolio {
 	opacity: 0;
-	animation: fadeIn 2.8s;
-	animation-delay: 0.2s;
-	-webkit-animation:fadeIn 2.8s;
-	-webkit-animation-delay:0.2s;
+	animation: fadeIn 2.1s;
+	animation-delay: 0s;
+	-webkit-animation:fadeIn 2.1s;
+	-webkit-animation-delay:0s;
 	-webkit-animation-fill-mode: forwards;
 }
 
 #fade-in-icon {
 	opacity: 0;
-	animation: fadeIn 1s;
-	animation-delay: 2s;
-	-webkit-animation:fadeIn 1s;
-	-webkit-animation-delay: 2s;
+	animation: fadeIn 2s;
+	animation-delay: 0s;
+	-webkit-animation:fadeIn 2s;
+	-webkit-animation-delay: 0s;
 	-webkit-animation-fill-mode: forwards;
 }
 
