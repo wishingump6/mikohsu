@@ -1730,8 +1730,12 @@ header>p {
         width: 100% !important;
     }
 
+    .info2{
+    	width: 80% !important;
+    }
+
     .phonesize{
-    	border: 11px !important;
+    	border: 13px !important;
     }
 }
 
