@@ -271,7 +271,7 @@
     $(".pic").mousedown(function(e) {
         intervalId = setInterval(function() {
         	alert("被你發現彩蛋了！送你一朵花\n(ゝ∀･)⌒✿");
-		clearInterval(intervalId);
+        	clearInterval(intervalId);
         }, 6000);
     }).mouseup(function() {
         clearInterval(intervalId);
