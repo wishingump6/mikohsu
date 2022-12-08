@@ -1,6 +1,10 @@
-
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
+
+@font-face {
+font-family: "jfOpen";
+src: url("jf-openhuninn-1.1.ttf");
+}
 
 
 html, body, div, span, applet, object,
@@ -1375,8 +1379,8 @@ input, select, textarea {
 		}
 
 	strong, h1, h2, h3, h4, h5, h6 {
-		font-weight: 700;
-		
+		font-weight: 500;
+		font-family: 'jfOpen';
 	}
 
 	h1 {
@@ -1631,6 +1635,7 @@ input, select, textarea {
 			align-items: center;
 			height: 100%;
 		}
+	
 
 			.image.centered img {
 				margin: 0 auto;
