@@ -1880,7 +1880,7 @@ button.xlarge,
     input[type="reset"],
     button,
     .button {
-        width: 100%;
+        width: 50%;
     }
 
 }
