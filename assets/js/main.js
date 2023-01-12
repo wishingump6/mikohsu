@@ -227,7 +227,7 @@
     $('#google-form').submit(function(e) {
         e.preventDefault();
 
-        if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('message').val()) {
+        if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('#message').val()) {
             $.ajax({
                 // url為Google Form按下submit的aciotn
                 url: "https://docs.google.com/forms/d/e/1FAIpQLSfUH5D9hPe7hOpMOZdUg-fpttOOKq9Eh2ypTz3dVIAUboVZpQ/formResponse",
