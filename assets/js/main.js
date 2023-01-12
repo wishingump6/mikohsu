@@ -227,7 +227,7 @@
     $('#google-form').submit(function(e) {
         e.preventDefault();
 
-        if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('#time2').val()) {
+        if ($('#email').val() && $('#name').val() && $('#phone').val() && $('#purpose').val() && $('message').val()) {
             $.ajax({
                 // url為Google Form按下submit的aciotn
                 url: "https://docs.google.com/forms/d/e/1FAIpQLSfUH5D9hPe7hOpMOZdUg-fpttOOKq9Eh2ypTz3dVIAUboVZpQ/formResponse",
@@ -237,8 +237,6 @@
                     "entry.946793821": $('#name').val(),
                     "entry.819294006": $('#phone').val(),
                     "entry.362561278": $('#purpose').val(),
-                    "entry.1672301594": $('#time1').val(),
-                    "entry.1711592634": $('#time2').val(),
                     "entry.1855613071": $('#message').val()
                 },
                 type: "POST", //POST, insert value
@@ -250,8 +248,6 @@
                     $('#name').val('');
                     $('#phone').val('')
                     $('#purpose').val('- 來信目的');
-                    $('#time1').val('');
-                    $('#time2').val('- 預計拍攝時段');
                     $('#message').val('');
                     //Show alert box
                     alert("- 𝙈𝙞𝙠𝙤 𝙋𝙝𝙤𝙩𝙤𝙜𝙧𝙖𝙥𝙝𝙮 -\n\n 🤍 已收到您填寫的表單\n 🤍 一人作業請靜候 𝘌-𝘮𝘢𝘪𝘭 回覆.ᐟ.ᐟ");
