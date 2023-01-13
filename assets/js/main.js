@@ -1,7 +1,7 @@
 /*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Astral by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 
@@ -266,24 +266,41 @@
     var intervalId;
     $(".pic").mousedown(function(e) {
         intervalId = setInterval(function() {
-        	alert("被你發現彩蛋了！送你一朵花\n(ゝ∀･)⌒✿");
-        	clearInterval(intervalId);
+            alert("被你發現彩蛋了！送你一朵花\n(ゝ∀･)⌒✿");
+            clearInterval(intervalId);
         }, 6000);
     }).mouseup(function() {
         clearInterval(intervalId);
     });
+
+    let slideIndex = 0;
+    showSlides();
+    
+    
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3800); // Change image every 2 seconds
+    }
 })(jQuery);
 
 /*隱藏按鈕
-			
-			
+            
+            
 
-				if (window.location.hash != href){
-						window.location.hash = href;
-							if(href == "#work"){
-								$(".goTopButton").show();
-							}
-							else{
-								$(".goTopButton").hide("fast");
-							}
-						}*/
+                if (window.location.hash != href){
+                        window.location.hash = href;
+                            if(href == "#work"){
+                                $(".goTopButton").show();
+                            }
+                            else{
+                                $(".goTopButton").hide("fast");
+                            }
+                        }*/
