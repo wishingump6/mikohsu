@@ -263,6 +263,12 @@
         }, 800);
     });
 
+    $(".gotoCosplay").on('click', function(event) {
+        setTimeout(function() {
+            location.href = "#cosplay";
+        }, 800);
+    });
+
     var intervalId;
     $(".pic").mousedown(function(e) {
         intervalId = setInterval(function() {
